@@ -1,0 +1,294 @@
+/**
+ * @author Milos M
+ *
+ * CONTENTS
+ * 
+ * COMPASS
+ * CSS3...................All compass mixin imported.
+ *  
+ */
+/**
+ * #COMPASS
+ */
+/* open-sans-300 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../assets/font/open-sans-v16-latin-300.eot");
+  /* IE9 Compat Modes */
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("../assets/font/open-sans-v16-latin-300.eot?#iefix") format("embedded-opentype"), url("../assets/font/open-sans-v16-latin-300.woff2") format("woff2"), url("../assets/font/open-sans-v16-latin-300.woff") format("woff"), url("../assets/font/open-sans-v16-latin-300.ttf") format("truetype"), url("../assets/font/open-sans-v16-latin-300.svg#OpenSans") format("svg");
+  /* Legacy iOS */
+}
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/font/open-sans-v16-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../assets/font/open-sans-v16-latin-regular.eot?#iefix") format("embedded-opentype"), url("../assets/font/open-sans-v16-latin-regular.woff2") format("woff2"), url("../assets/font/open-sans-v16-latin-regular.woff") format("woff"), url("../assets/font/open-sans-v16-latin-regular.ttf") format("truetype"), url("../assets/font/open-sans-v16-latin-regular.svg#OpenSans") format("svg");
+  /* Legacy iOS */
+}
+/* open-sans-600 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../assets/font/open-sans-v16-latin-600.eot");
+  /* IE9 Compat Modes */
+  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"), url("../assets/font/open-sans-v16-latin-600.eot?#iefix") format("embedded-opentype"), url("../assets/font/open-sans-v16-latin-600.woff2") format("woff2"), url("../assets/font/open-sans-v16-latin-600.woff") format("woff"), url("../assets/font/open-sans-v16-latin-600.ttf") format("truetype"), url("../assets/font/open-sans-v16-latin-600.svg#OpenSans") format("svg");
+  /* Legacy iOS */
+}
+/* open-sans-700 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/font/open-sans-v16-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../assets/font/open-sans-v16-latin-700.eot?#iefix") format("embedded-opentype"), url("../assets/font/open-sans-v16-latin-700.woff2") format("woff2"), url("../assets/font/open-sans-v16-latin-700.woff") format("woff"), url("../assets/font/open-sans-v16-latin-700.ttf") format("truetype"), url("../assets/font/open-sans-v16-latin-700.svg#OpenSans") format("svg");
+  /* Legacy iOS */
+}
+/* open-sans-800 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: url("../assets/font/open-sans-v16-latin-800.eot");
+  /* IE9 Compat Modes */
+  src: local("Open Sans ExtraBold"), local("OpenSans-ExtraBold"), url("../assets/font/open-sans-v16-latin-800.eot?#iefix") format("embedded-opentype"), url("../assets/font/open-sans-v16-latin-800.woff2") format("woff2"), url("../assets/font/open-sans-v16-latin-800.woff") format("woff"), url("../assets/font/open-sans-v16-latin-800.ttf") format("truetype"), url("../assets/font/open-sans-v16-latin-800.svg#OpenSans") format("svg");
+  /* Legacy iOS */
+}
+/* line 2, ../sass/components/_helpers.scss */
+.ui-float__left {
+  float: left;
+}
+/* line 6, ../sass/components/_helpers.scss */
+.ui-float__right {
+  float: right;
+}
+/* line 10, ../sass/components/_helpers.scss */
+.ui-float__none {
+  float: none;
+}
+
+/* line 16, ../sass/components/_helpers.scss */
+.ui-fixed-width__150px {
+  width: 150px;
+}
+/* line 20, ../sass/components/_helpers.scss */
+.ui-fixed-width__80 {
+  width: 80%;
+}
+
+/* line 26, ../sass/components/_helpers.scss */
+.ui-state-active, .ui-state-error {
+  color: #ff6600;
+}
+
+/* line 32, ../sass/components/_helpers.scss */
+.ui-color__white {
+  color: #ffffff;
+}
+
+/* line 38, ../sass/components/_helpers.scss */
+.ui-cursor__pointer {
+  cursor: pointer;
+}
+
+/* line 43, ../sass/components/_helpers.scss */
+.clear {
+  margin: 0;
+  clear: both;
+}
+
+/* line 1, ../sass/components/_layout.scss */
+body {
+  font-family: 'Open Sans';
+  margin: 0;
+}
+/* line 5, ../sass/components/_layout.scss */
+body * {
+  box-sizing: border-box;
+}
+
+/* line 10, ../sass/components/_layout.scss */
+.ui-top-panel {
+  height: 60px;
+  width: 100%;
+  background: #ff6600;
+  z-index: 2;
+  position: relative;
+  -webkit-box-shadow: 0px 7px 27px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 7px 27px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 7px 27px -12px rgba(0, 0, 0, 0.75);
+}
+/* line 20, ../sass/components/_layout.scss */
+.ui-top-panel .ui-search-panel {
+  width: 470px;
+  height: 100%;
+  float: left;
+  background: #e35b00;
+}
+/* line 27, ../sass/components/_layout.scss */
+.ui-top-panel .ui-label-wrapper {
+  float: left;
+}
+/* line 30, ../sass/components/_layout.scss */
+.ui-top-panel .ui-label-wrapper i {
+  vertical-align: middle;
+  height: 60px;
+}
+/* line 35, ../sass/components/_layout.scss */
+.ui-top-panel .ui-label-wrapper span {
+  height: 60px;
+  visibility: middle;
+}
+
+/* line 42, ../sass/components/_layout.scss */
+.ui-logo {
+  height: 40px;
+  width: 40px;
+  background-image: url("../assets/images/logo.svg");
+  background-position: -8px -1px;
+  background-repeat: no-repeat;
+  background-size: 52px;
+  display: inline-block;
+  margin: 10px;
+}
+
+/* line 53, ../sass/components/_layout.scss */
+.ui-left-panel {
+  width: 470px;
+  float: left;
+  height: calc(100vh - 60px);
+  background: #eeeeee;
+  padding: 20px 30px;
+  overflow-y: auto;
+}
+
+/* line 62, ../sass/components/_layout.scss */
+.ui-center-panel {
+  width: calc(100% - 470px);
+  padding: 20px 30px;
+  float: left;
+}
+
+/* line 1, ../sass/components/_table.scss */
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+  font-weight: 500;
+  transition: 0.2s all ease-in;
+}
+/* line 8, ../sass/components/_table.scss */
+table th {
+  text-align: left;
+  border-bottom: 1px solid #ff6600;
+  color: #ff6600;
+  padding: 14px 0;
+  font-weight: 400;
+}
+/* line 16, ../sass/components/_table.scss */
+table td {
+  height: 60px;
+  color: #666666;
+  padding: 9px 0;
+  box-sizing: border-box;
+}
+/* line 25, ../sass/components/_table.scss */
+table .ui-currently-active td:first-child {
+  color: #ff6600;
+}
+/* line 29, ../sass/components/_table.scss */
+table .ui-currently-active td button {
+  display: none;
+}
+/* line 36, ../sass/components/_table.scss */
+table tbody td {
+  border-bottom: 1px solid #cccccc;
+}
+/* line 40, ../sass/components/_table.scss */
+table tbody button {
+  visibility: hidden;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  width: auto;
+  background: none;
+  font-size: 13px;
+  color: #666666;
+  text-transform: capitalize;
+  float: right;
+  font-weight: normal;
+}
+/* line 53, ../sass/components/_table.scss */
+table tbody button:hover {
+  color: #ff6600;
+}
+/* line 60, ../sass/components/_table.scss */
+table tbody tr:hover button {
+  visibility: visible;
+}
+
+/* line 1, ../sass/components/_input.scss */
+input {
+  width: 100%;
+  border: 1px solid #cccccc;
+  height: 40px;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #666666;
+  outline: 0;
+}
+
+/* line 1, ../sass/components/_button.scss */
+button {
+  background: #ff6600;
+  color: #ffffff;
+  font-size: 14px;
+  height: 40px;
+  border: 0;
+  outline: none;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+}
+
+/* line 15, ../sass/components/_button.scss */
+.ui-plain-button {
+  background: transparent;
+  color: #ff6600;
+  padding: 0;
+}
+/* line 20, ../sass/components/_button.scss */
+.ui-plain-button:hover {
+  color: #e35b00;
+}
+
+/* line 25, ../sass/components/_button.scss */
+i {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 31, ../sass/components/_button.scss */
+i.ui-plus-icon {
+  height: 30px;
+  width: 30px;
+  background-image: url("../assets/images/plus-icon.svg");
+  background-position: 0px 3px;
+  background-repeat: no-repeat;
+  background-size: 22px;
+}
+/* line 40, ../sass/components/_button.scss */
+i.ui-euro-icon {
+  background: url("../assets/images/euro-icon.png");
+  background-repeat: no-repeat;
+  background-position: 10px 19px;
+}

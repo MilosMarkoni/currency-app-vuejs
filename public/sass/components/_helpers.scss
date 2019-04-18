@@ -1,0 +1,46 @@
+.ui-float {
+    &__left {
+        float: left;
+    }
+
+    &__right {
+        float: right;
+    }
+
+    &__none {
+        float: none;
+    }
+}
+
+.ui-fixed-width {
+    &__150px {
+        width: 150px;
+    }
+
+    &__80 {
+        width: 80%;
+    }
+}
+
+.ui-state {
+    &-active, &-error {
+        color: $main-color;
+    }
+}
+
+.ui-color {
+    &__white {
+        color: $white;
+    }
+}
+
+.ui-cursor {
+    &__pointer {
+        cursor: pointer;
+    }
+}
+
+.clear {
+    margin: 0;
+    clear: both;
+}

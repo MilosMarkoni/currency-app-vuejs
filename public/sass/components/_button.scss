@@ -1,0 +1,45 @@
+button {
+    background: $main-color;
+    color: $white;
+    font-size: 14px;
+    height: 40px;
+    border: 0;
+    outline: none;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+}
+
+.ui-plain-button {
+    background: transparent;
+    color: $main-color;
+    padding: 0;
+
+    &:hover {
+        color: #e35b00;
+    }
+}
+
+i {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+
+    &.ui-plus-icon {
+        height: 30px;
+        width: 30px;
+        background-image: url("../assets/images/plus-icon.svg");
+        background-position: 0px 3px;
+        background-repeat: no-repeat;
+        background-size: 22px;
+    }
+
+    &.ui-euro-icon {
+        background: url("../assets/images/euro-icon.png");
+        background-repeat: no-repeat;
+        background-position: 10px 19px;
+    }
+}

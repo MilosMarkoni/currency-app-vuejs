@@ -1,0 +1,66 @@
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+    font-weight: 500;
+    transition: 0.2s all ease-in;
+
+    th {
+        text-align: left;
+        border-bottom: 1px solid $main-color;
+        color: $main-color;
+        padding: 14px 0;
+        font-weight: 400;
+    }
+
+    td {
+        height: 60px;
+        color: $text-color;
+        padding: 9px 0;
+        box-sizing: border-box;
+    }
+
+    .ui-currently-active {
+        td {
+            &:first-child {
+                color: $main-color;
+            }
+
+            button {
+                display: none;
+            }
+        }
+    }
+
+    tbody {
+        td {
+            border-bottom: 1px solid $default-border-color;
+        }
+
+        button {
+            visibility: hidden;
+            border: 0;
+            outline: 0;
+            padding: 0;
+            width: auto;
+            background: none;
+            font-size: 13px;
+            color: $text-color;
+            text-transform: capitalize;
+            float: right;
+            font-weight: normal;
+
+            &:hover {
+                color: $main-color;
+            }
+        }
+
+        tr {
+            &:hover {
+                button {
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
